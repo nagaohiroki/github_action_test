@@ -7,6 +7,8 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: UnityProject/Library
+          key: Library-win64
+          restore-keys: Library-
       - uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
