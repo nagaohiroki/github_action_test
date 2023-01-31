@@ -6,4 +6,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: test
-      - run: echo %PATH%
+        run: echo %PATH%
